@@ -1,0 +1,143 @@
+---
+# configuración vacía, para indicar a Jekyll que procese este archivo
+---
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Martín Bernardi</title>
+		{% include meta.html %}
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Sitio personal" />
+		<link href="https://fonts.googleapis.com/css?family=Lato:300i,400&display=swap" rel="stylesheet">
+
+		<!-- For mobiles -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!--
+			The below three lines are a fix to get HTML5 semantic elements working
+			in old versions of Internet Explorer.
+			From https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure
+		-->
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+		<![endif]-->
+
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="simple.css">
+	</head>
+	<body>
+		<header>
+			<h1>Martín Bernardi</h1>
+			<!-- <p>Estudiante Ing. Telecomunicaciones</p> -->
+			<address>
+				martin<span class="anti_spam">[ignorar]</span>@mbernardi<span class="anti_spam">[ignorar]</span>.com.ar
+			</address>
+			<a href="https://github.com/martinber">GitHub</a>
+		</header>
+		<main>
+			<ul id="projects_list">
+				<li>
+					<img src="./banners/noaa-apt.jpg" alt="Banner noaa-apt" />
+					<div>
+						<h2>noaa-apt</h2>
+						<p lang="en">Image decoder for APT signals from NOAA satellites</p>
+						<p lang="es" class="translation">Decodificador de señales APT desde satélites NOAA</p>
+						<ul>
+							<li><a href="https://noaa-apt.mbernardi.com.ar">Website</a></li>
+							<li><a href="https://github.com/martinber/noaa-apt">GitHub</a></li>
+							<li><a href="https://www.rtl-sdr.com/noaa-apt-software-decoder-users-guide-now-available/">Blog post</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<img src="./banners/dso-guide.jpg" alt="Banner DSO Guide" />
+					<div>
+						<h2>DSO Guide</h2>
+						<p lang="en">Web application for amateur astronomical observations planning</p>
+						<p lang="es" class="translation">Aplicación web para planificar observaciones astronómicas</p>
+						<ul>
+							<li><a href="https://dso.mbernardi.com.ar">Website</a></li>
+							<li><a href="https://github.com/martinber/dso-guide">GitHub</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<img src="./banners/electro-redes.jpg" alt="Banner Electro Redes" />
+					<div>
+						<h2>Web Electro Redes</h2>
+						<p lang="en">Static website design</p>
+						<p lang="es" class="translation">Diseño de página web estática</p>
+						<ul>
+							<li><a href="https://electroredes.com.ar">Website</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<img src="./banners/parallax-portal.jpg" alt="Banner parallax-portal" />
+					<div>
+						<h2>parallax-portal</h2>
+						<p lang="en">Augmented reality demonstration, based on webcam face detection</p>
+						<p lang="es" class="translation">Demo de realidad aumentada, basada en la detección de caras desde una webcam</p>
+						<ul>
+							<li><a href="https://github.com/IgnaciooR/parallax-portal">GitHub</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<img src="./banners/stellarium.jpg" alt="Banner Stellarium icons" />
+					<div>
+                        <h2>Stellarium GUI icons</h2>
+                        <p lang="en">Redrawn every icon on the Stellarium user interface</p>
+                        <p lang="es" class="translation">Redibujado de los íconos en la interfaz de Stellarium</p>
+                        <ul>
+                            <li><a href="https://stellarium.org/">Stellarium website</a></li>
+                        </ul>
+					</div>
+				</li>
+				<li>
+					<div>
+                        <h2>vor-python-decoder</h2>
+                        <p lang="en">VOR (VHF omnidirectional range) signal decoder</p>
+                        <p lang="es" class="translation">Decodificador de señales VOR</p>
+                        <ul>
+                            <li><a href="https://github.com/martinber/vor-python-decoder">GitHub</a></li>
+                            <li><a href="https://www.rtl-sdr.com/a-new-vor-decoder-written-in-python/">Blog post</a></li>
+                        </ul>
+					</div>
+				</li>
+				<li>
+					<div>
+					<h2>rtlsdr_sstv</h2>
+					<p lang="en">Slow Scan TV (PD-120) modulation and demodulation</p>
+					<p lang="es" class="translation">Modulación y demodulación de transmisiones SSTV (PD-120)</p>
+					<ul>
+						<li><a href="https://github.com/martinber/rtlsdr_sstv">GitHub</a></li>
+					</ul>
+					</div>
+				</li>
+				<li>
+					<div>
+                        <h2>DIY handheld console</h2>
+                        <p lang="en">Raspberry Pi Handheld console for retro games emulation</p>
+                        <p lang="es" class="translation">Consola portátil con Raspberry PI para emulación de juegos</p>
+                        <ul>
+                            <li><a href="https://mbernardi.gitlab.io/guia_mi_consola_portatil/">Website</a></li>
+                        </ul>
+					</div>
+				</li>
+				<li>
+					<div>
+                        <h2>Guía Sphinx</h2>
+                        <p lang="en">Spanish tutorial for documentation using Sphinx</p>
+                        <p lang="es" class="translation">Tutorial para documentación con Sphinx</p>
+                        <ul>
+                            <li><a href="https://martinber.github.io/guia-sphinx/">Website</a></li>
+                            <li><a href="https://github.com/martinber/guia-sphinx">GitHub</a></li>
+                        </ul>
+					</div>
+				</li>
+			</ul>
+		</main>
+	</body>
+</html>
