@@ -1,0 +1,170 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #2d2d2d;
+	line-height: 1.5;
+}
+header {
+	text-align: right;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+}
+header img {
+	margin-left: 1.5em;
+	width: 10em;
+	order: 1;
+	flex-grow: 0;
+}
+header div {
+	order: 2;
+	flex-grow: 1;
+	border-right: #909090 1px solid;
+	padding-right: 1em;
+}
+header li {
+	list-style-type: none;
+}
+header h1 {
+	font-style: italic;
+	font-weight: 300;
+	font-size: 3em;
+	line-height: 1;
+	margin: 0.1em;
+}
+address {
+	font-style: normal;
+}
+a {
+	color: #0000aa;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:visited {
+	color: #3333dd;
+}
+.anti_spam {
+	display: none;
+}
+section {
+	padding-left: 2em;
+}
+.translation {
+	font-style: italic;
+	color: #202020;
+	quotes: "\00ab" "\00bb";
+}
+.translation:before {
+	content: open-quote;
+}
+.translation:after {
+	content: close-quote;
+}
+h2 {
+	max-width: 16em;
+	border-bottom: #909090 1px solid;
+}
+h2, h3, h4, h5 {
+	break-after: avoid;
+}
+.title > * {
+	margin: 0;
+	break-inside: avoid;
+	break-after: avoid;
+}
+.title {
+	margin: 0;
+}
+.dates {
+	font-weight: bold;
+}
+.hidden {
+	display: none;
+}
+ul {
+	break-inside: avoid;
+}
+#toolbar {
+	display: flex;
+	align-items: center;
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+	background-color: #fbfbfb;
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+	border-bottom: #909090 1px solid;
+	padding: 0.5em;
+}
+#print_button {
+	display: inline-block;
+	flex-grow: 0;
+}
+#visibility_buttons {
+	display: inline-block;
+	flex-grow: 1;
+}
+#visibility_buttons input {
+	margin-left: 0.7em;
+}
+
+
+@media screen {
+	body {
+		background-color: #fdfdfd;
+		max-width: 920px;
+		margin: 3em auto;
+		font-size: 18px;
+	}
+	header {
+		margin: 6em 1em;
+	}
+	main {
+		padding: 0 2em;
+	}
+	h2 {
+		margin-top: 2em;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	body {
+		font-size: 14px;
+	}
+	header {
+		text-align: right;
+		display: block;
+	}
+	header img {
+		margin: 1em 4em;
+		width: 100%;
+		max-width: 10em;
+	}
+	h2 {
+		max-width: inherit;
+	}
+	#print_button {
+		display: none;
+		flex-grow: 0;
+	}
+}
+
+@media print {
+	@page {
+		size: A4;
+		margin: 2cm 2.5cm;
+	}
+	body {
+		font-size: 11px;
+	}
+	#toolbar {
+		display: none;
+	}
+}

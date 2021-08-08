@@ -87,7 +87,7 @@ a:visited {
 }
 .translation {
 	font-style: italic;
-	color: #6a6a6a;
+	color: #202020;
 }
 @media screen and (max-width: 800px) {
 	#projects_list > li {

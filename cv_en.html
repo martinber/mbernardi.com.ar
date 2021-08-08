@@ -1,0 +1,534 @@
+---
+# configuración vacía, para indicar a Jekyll que procese este archivo
+---
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Martín Bernardi - CV English</title>
+		{% include meta.html %}
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="English CV" />
+		<link href="https://fonts.googleapis.com/css?family=Lato:300i,400&display=swap" rel="stylesheet">
+
+		<!-- For mobiles -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!--
+			The below three lines are a fix to get HTML5 semantic elements working
+			in old versions of Internet Explorer.
+			From https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure
+		-->
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+		<![endif]-->
+
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="cv.css">
+	</head>
+	<body>
+		<div id="toolbar">
+			<div id="visibility_buttons">
+				<input type="radio" id="visibility_normal" name="visibility" value="normal" checked>
+				<label for="visibility_normal">Normal</label>
+
+				<input type="radio" id="visibility_long" name="visibility" value="long">
+				<label for="visibility_long">Long</label>
+
+				<input type="radio" id="visibility_too_much" name="visibility" value="too_much">
+				<label for="visibility_too_much">Too much</label>
+			</div>
+			<input type="button" id="print_button" value="Print" onClick="window.print()">
+		</div>
+
+		<header>
+			<img src="./cv_photo.png" alt="photo" />
+			<div>
+				<h1>Martín Bernardi</h1>
+				<ul>
+					<li><strong>Nationality:</strong> Argentine / Italian</li>
+					<li><strong>Address:</strong> Ucacha,&nbsp;Argentina / Bordeaux,&nbsp;France</li>
+					<li><strong>Phone:</strong> +54&nbsp;9&nbsp;353&nbsp;422-1608 / +36&nbsp;30&nbsp;963-3364</li>
+					<li><strong>Mail:</strong> martin@mbernardi.com.ar</li>
+					<li><strong>Date of birth:</strong> 07 August 1996</li>
+				</ul>
+			</div>
+		</header>
+
+		<main>
+			<h2>Work experience</h2>
+
+			<section>
+
+				<div class="title">
+					<h3>VENG S.A.</h3>
+					<span class="dates">March 2020 - September 2020</span>
+				</div>
+				<ul>
+					<li>Developer at SECF (SAR Engineering Calibration Facility)</li>
+					<li>Python, PostgreSQL and GNU/Linux development for CONAE (Argentine National Space Activities
+						Commission)</li>
+					<li>Data processing, generation of automatic monitoring reports and alerts, for SAOCOM 1A and 1B SAR antenna
+						calibration</li>
+					<span class="hidden_1"><li>Worked 3 months as university internship</li></span>
+				</ul>
+
+				<div class="title">
+					<h3>Other</h3>
+				</div>
+				<ul>
+					<li><!--2020 --> FTTH network design for towns of Ucacha, Los Cisnes, Ausonia and Olaeta (Argentina)</li>
+				</ul>
+
+			</section>
+
+			<h2>Education</h2>
+
+			<section>
+
+				<div class="title">
+					<h3>Image Processing and Computer Vision Master</h3>
+					<span class="dates">2020 - 2022</span>
+				</div>
+				<ul>
+					<li>Pázmány Péter Catholic University, Budapest, Hungary</li>
+					<li>Universidad Autónoma de Madrid, Spain</li>
+					<li>University of Bordeaux, France</li>
+				</ul>
+
+				<div class="title">
+					<h3>Telecommunications Engineering</h3>
+					<span class="dates">2015 - 2020</span>
+				</div>
+				<ul>
+					<li>Universidad Nacional de Rio Cuarto</li>
+					<li class="hidden_1">GPA: 9.29</li>
+					<li>Engineering School Flag-bearer</li>
+					<li class="hidden_1">Main areas:<ul>
+						<li>Networking and TCP/IP applications</li>
+						<li>Antennas and Radiocommunications</li>
+						<li>Signals, Systems and Modulation</li>
+						<li>Outside plant networks</li>
+					</ul></li>
+				</ul>
+
+				<div class="title hidden_1">
+					<h3>High School Bachelor on Natural Sciences</h3>
+					<span class="dates">2009 - 2014</span>
+				</div>
+				<ul class="hidden_1">
+					<li>Instituto Secundario Libertador General San Martín</li>
+					<li>GPA: 9.51</li>
+					<li>Flag-bearer</li>
+				</ul>
+
+			</section>
+
+			<h2>Languages</h2>
+
+			<section>
+
+				<ul>
+					<li>Spanish (native language)</li>
+					<li>English (TOEFL iBT, January 2020, score 107)</li>
+                    <li class="hidden_1">French (A1/A2, living in France for 4 months)</li>
+				</ul>
+
+				<div class="hidden_2">
+					<div class="title">
+						<h3>TOEFL iBT certificate</h3>
+						<span class="dates">January 2020</span>
+						<!--2020-01-04-->
+					</div>
+
+					<ul>
+						<li><strong>Reading:</strong> 30 - CEFR C1 - Advanced</li>
+						<li><strong>Listening:</strong> 29 - CEFR C1 - Advanced</li>
+						<li><strong>Speaking:</strong> 25 - CEFR C1 - Advanced</li>
+						<li><strong>Writing:</strong> 23 - CEFR B2 - High-Intermediate</li>
+						<li><strong>Total:</strong> 107</li>
+					</ul>
+				</div>
+
+			</section>
+
+			<h2>Skills</h2>
+
+			<section>
+
+				<div class="title">
+					<h3>Programming</h3>
+				</div>
+
+				<ul>
+					<li>Python <span class="hidden_2">- Used in work at VENG S.A. and in lots of small projects</span></li>
+					<li>HTML5/CSS3/Javascript <span class="hidden_2">- Used in DSO Guide and small projects</span></li>
+					<li>Rust <span class="hidden_2">- Used in noaa-apt</span></li>
+					<li>Git <span class="hidden_2">- Used daily</span></li>
+					<li>GTK+3 <span class="hidden_2">- Used in noaa-apt</span></li>
+					<li class="hidden_1">Some other things I've used
+						<span class="hidden_2">in school work or small projects</span>: Bash, C , C++, Java, MATLAB, Qt</li>
+				</ul>
+
+				<div class="title">
+					<h3>Other</h3>
+				</div>
+
+				<ul>
+					<li>GNU/Linux and basic sysadmin skills <span class="hidden_2">- Used daily in personal computer and home server</span></li>
+					<li>Docker, NGINX, Jekyll <span class="hidden_2">- Used in home server</span></li>
+					<li>AutoCAD <span class="hidden_2">- For outside plant designs</span></li>
+					<li class="hidden_1">Some other things I've used <span class="hidden_2">In school work or small projects</span>
+						<ul>
+							<li>Cisco IOS and Mikrotik RouterOS configuration</li>
+							<li>High Level Syntesis in FPGAs</li>
+							<li>CST Studio, Radiomobile</li>
+						</ul>
+					</li>
+				</ul>
+
+			</section>
+
+			<h2>Activities at Universidad Nacional de Rio Cuarto</h2>
+
+			<section>
+
+				<div class="title">
+					<h3>Undergraduate teacher assistant</h3>
+					<span class="dates">2019</span>
+				</div>
+
+				<ul>
+					<li class="hidden_1">Title: <span lang="es">Ayudante de Segunda Rentado</li>
+					<li>Courses:
+						<ul>
+							<li>Network Architecture
+								<span lang="es" class="translation">Arquitectura de redes</span></li>
+							<li>Information Networks
+								<span lang="es" class="translation">Redes de Información</span></li>
+						</ul>
+					<li class="hidden_1">Additional activities:
+						<ul>
+							<li>Instructor on High School internships about "Data networks
+								configuration and analysis" -
+								<span lang="es" class="translation">Configuración y análisis de
+								redes de datos</span>. Years 2016 and 2019</li>
+
+							<li>Collaboration and study material design on internships for students
+								of Superior Technicature on Infraestructure Networks -
+								<span lang="es" class="translation">Tecnicatura Superior en Redes de
+								Infraestructura</span>. Year 2019</li>
+
+							<li>Collaboration on University Open Day, presenting study plans and the
+								Networking Laboratory to High School students. Year 2019</li>
+
+							<li>Maintenance of Cisco and Mikrotik networking equipment and of Linux
+								computers</li>
+						</ul>
+					</li>
+				</ul>
+
+				<div class="title">
+					<h3>GIDAT research group member</h3>
+					<span class="dates">2016 - 2019</span>
+					<!--25/11/2016 - 15/03/2019-->
+				</div>
+
+				<ul>
+					<li>Group: GIDAT - Investigation and Development Group Applied to
+						Telecommunications - <span lang="es" class="translation">Grupo de
+						investigación y Desarrollo Aplicado a las Telecomunicaciones</span></li>
+
+					<li class="hidden_1">Participation on projects
+						<ul>
+							<li>Telemedicine: Taking medicine where there are no doctors -
+								<span lang="es" class="translation">Telemedicina: Llevando la
+								medicina a donde no hay médicos</span></li>
+
+							<li>Internet of Things (IoT): Teleoperated systems analysis -
+								<span lang="es" class="translation">Internet de las
+								Cosas (IoT): Análisis de sistemas teleoperados</span></li>
+						</ul>
+					</li>
+
+					<li class="hidden_1">Activities:
+						<ul>
+							<li>Big Data cluster implementation using Apache Spark</li>
+
+							<li>Collaboration on software libraries programming</li>
+
+							<li>Participation on group training</li>
+						</ul>
+					</li>
+				</ul>
+
+				<div class="title hidden_1">
+					<h3>Member of Engineering Careers Promotion Board</h3>
+					<span class="dates">2019</span>
+				</div>
+
+				<ul class="hidden_1">
+					<li>Title: <span lang="es">Comisión de promoción de
+						carreras de Ingeniería</span></li>
+				</ul>
+
+				<div class="title hidden_1">
+					<h3>Networking Laboratory member</h3>
+					<span class="dates">2016 - 2017</span>
+				</div>
+
+			</section>
+
+			<h2>Projects</h2>
+
+			<section>
+
+				<div class="title">
+					<h3>Satellite image decoder</h3>
+					<span class="dates">2018 - today</span>
+				</div>
+
+				<p>Personal project. For NOAA POES satellite reception using Software Defined
+					Radio. Written on the Rust programming language.
+					<a href="https://noaa-apt.mbernardi.com.ar">https://noaa-apt.mbernardi.com.ar</a></p>
+
+				<div class="title">
+					<h3>Web application</h3>
+					<span class="dates">2019</span>
+				</div>
+
+				<p>Group final project. For amateur astronomical observations planning.
+					Developed using Javascript, Flask (Python) and SQL.
+					<a href="https://dso.mbernardi.com.ar">https://dso.mbernardi.com.ar</a></p>
+
+				<div class="title hidden_1">
+					<h3>Augmented reality demonstration</h3>
+					<span class="dates">2019</span>
+				</div>
+
+				<p class="hidden_1">Group final project. Augmented/virtual reality demonstration from webcam
+					face detection. Developed using Python, OpenCV and OpenGL.
+					<a href="https://github.com/irittano/parallax-portal">https://github.com/irittano/parallax-portal</a></p>
+
+				<div class="title hidden_1">
+					<h3>Static webpage</h3>
+					<span class="dates">2014 - today</span>
+				</div>
+
+				<p class="hidden_1">Personal project. Design of business website from scratch.
+					<a href="https://electroredes.com.ar">https://electroredes.com.ar</a></p>
+
+				<div class="title hidden_1">
+					<h3>Personal home server administration</h3>
+					<span class="dates">2014 - today</span>
+				</div>
+
+				<p class="hidden_1">Installation and administration of Debian GNU/Linux personal server
+					containing a NGINX reverse proxy and various services on Docker containers.</p>
+
+				<div class="title hidden_1">
+					<h3>Free software contributions</h3>
+				</div>
+
+				<p class="hidden_1">Minor contributions to free software projects including Stellarium,
+					d3-celestial, openage, gtk-rs, and satellite-rs</p>
+
+				<div class="title hidden_2">
+					<h3>Stellarium graphical user interface</h3>
+					<span class="dates">2020</span>
+				</div>
+
+				<p class="hidden_2">Icons redesign and minor work on GUI of Stellarium, a free virtual
+					planetarium.</p>
+
+				<div class="title hidden_2">
+					<h3>Minor projects with SDR</h3>
+				</div>
+
+				<p class="hidden_2">Group final projects on Software Defined Radio. Transmission and
+					reception of SSTV (Slow Scan Television) signals. VOR (VHF Omnifirectional
+					Range) signal decoding.</p>
+
+			</section>
+
+			<h2>Courses and seminars</h2>
+
+			<section>
+
+				<div class="title">
+					<h3>Satellital Images Processing course with Python</h3>
+					<span class="dates">July 2020 - September 2020</span>
+					<!-- 01/07/2020 - 16/08/2020?? Termine de hacer trabajo en Sept -->
+				</div>
+
+				<ul>
+					<li class="hidden_1"><span lang="es" class="translation">Curso de Procesamiento Base de Imágenes Satelitales con Python</span></li>
+					<li>UFS Education Unit, CONAE (National Space Activities Commission)</li>
+					<li class="hidden_1">As assistant. 50 hours (theory) and 50 hours (practice)</li>
+				</ul>
+
+				<div class="title hidden_1">
+					<h3>Introduction to networking and internet</h3>
+					<span class="dates">March 2020 - April 2020</span>
+				</div>
+
+				<ul class="hidden_1">
+					<li>As instructor. Given to CESPU personnel (Cooperativa Eléctrica y de Servicios Públicos Ucacha Ltda.)</li>
+				</ul>
+
+				<div class="title">
+					<h3>Introduction to SAR remote sensing (2nd level)</h3>
+					<span class="dates">March 2020 - June 2020</span>
+					<!-- 30/03/2020 - 01/06/2020 -->
+				</div>
+
+				<ul>
+					<li class="hidden_1"><span lang="es" class="translation">Introducción a la teledetección SAR (nivel 2)</span></li>
+					<li>UEFM Education Unit, CONAE (National Space Activities Commission)</li>
+					<li class="hidden_1">As assistant. 25 hours</li>
+				</ul>
+
+				<div class="title hidden_2">
+					<h3>Infraestructure and networks on cooperatives</h3>
+					<span class="dates">November 2019</span>
+					<!-- 15/11/2019. -->
+				</div>
+
+				<ul class="hidden_2">
+					<li><span lang="es" class="translation">Redes e infraestructura en cooperativas de servicios de datos</span></li>
+					<li>Seminar. As assistant.</li>
+				</ul>
+
+				<div class="title hidden_2">
+					<h3>Study plans and programs review for developing student centered learning on Telecommunications Engineering</h3>
+					<span class="dates">June 2019</span>
+					<!-- 25/06/2019. -->
+				</div>
+
+				<ul class="hidden_2">
+					<li><span lang="es" class="translation">Revisión de planes de estudios y programas para el desarrollo de un
+						aprendizaje centrado en el estudiante de la carrera Ingeniería en Telecomunicaciones</span></li>
+					<li>Workshop. As assistant with approval.</li>
+				</ul>
+
+				<div class="title hidden_2">
+					<h3>Update on cellular access networks technologies</h3>
+					<span class="dates">March 2019</span>
+					<!-- 07/03/2019. -->
+				</div>
+
+				<ul class="hidden_2">
+					<li><span lang="es" class="translation">Actualización en tecnologías de redes de acceso móvil celular</span></li>
+					<li>Talk. As assistant.</li>
+				</ul>
+
+				<div class="title hidden_2">
+					<h3>Artificial intelligence and its applications on engineering</h3>
+					<span class="dates">October 2017</span>
+					<!-- 02/10/2017. -->
+				</div>
+
+				<ul class="hidden_2">
+					<li><span lang="es" class="translation">Inteligencia artificial y sus aplicaciones en la ingeniería</span></li>
+					<li>Conference. As attendant.</li>
+				</ul>
+
+				<div class="title hidden_2">
+					<h3>Introduction to the Python 3.X programming language</h3>
+					<span class="dates">September 2017</span>
+					<!-- 15/09/2017 - 29/09/2017. -->
+				</div>
+
+				<ul class="hidden_2">
+					<li><span lang="es" class="translation">Introducción al lenguaje de programación Python 3.X - 2017</span></li>
+					<li>Training seminar. As attendant with approval.</li>
+				</ul>
+
+				<div class="title hidden_1">
+					<h3>Asynchronous programming and message-based communications</h3>
+					<span class="dates">May 2017</span>
+					<!-- 16/05/2017. -->
+				</div>
+
+				<ul class="hidden_1">
+					<li><span lang="es" class="translation">Programación asíncrona y comunicaciones basadas en mensajería</span></li>
+					<li>Training seminar. As instructor.</li>
+				</ul>
+
+				<div class="title hidden_1">
+					<h3>Cluster use and deployment using Apache Spark</h3>
+					<span class="dates">December 2016</span>
+					<!-- 08/12/2016 - 16/12/2016. -->
+				</div>
+
+				<ul class="hidden_1">
+					<li><span lang="es" class="translation">Montaje y uso de tecnología de cluster usando Apache Spark</span></li>
+					<li>Training seminar. As instructor.</li>
+				</ul>
+
+				<div class="title hidden_1">
+					<h3>Chromecast use as a classroom projection tool</h3>
+					<span class="dates">December 2016</span>
+					<!-- 12/12/2016. -->
+				</div>
+
+				<ul class="hidden_1">
+					<li><span lang="es" class="translation">Uso de Chromecast como herramienta de proyección multimedia áulica</span></li>
+					<li>Training workshop. As attendant.</li>
+				</ul>
+
+				<div class="title hidden_2">
+					<h3>Introduction to Networking and Internet</h3>
+					<span class="dates">November 2016 - December 2016</span>
+					<!-- 17/11/2016 - 15/12/2016. -->
+				</div>
+
+				<ul class="hidden_2">
+					<li><span lang="es" class="translation">Introducción a las Redes e Internet</span></li>
+					<li>Training course. As attendant with approval.</li>
+				</ul>
+
+				<div class="title hidden_2">
+					<h3>Apache Spark Introduction</h3>
+					<span class="dates">November 2016</span>
+					<!-- 18/11/2016. -->
+				</div>
+
+				<ul class="hidden_2">
+					<li><span lang="es" class="translation">Introducción a Apache Spark</span></li>
+					<li>Training talk. As attendant.</li>
+				</ul>
+
+			</section>
+
+			<h2>Awards</h2>
+
+			<section>
+
+				<ul>
+					<li>2020 - Ing. Isidoro Marín Award, to the best graduates of engineering careers
+						from Argentine universities</li>
+					<li class="hidden_1">2019 - Engineering faculty flag-bearer: Second highest GPA on the Faculty of Engineering</li>
+					<li class="hidden_1">2014 - High-School flag-bearer: Highest GPA on school
+					<li class="hidden_1">Ñandú Mathematical Olympiad <span lang="es" class="translation">Olimpíada Matemática Ñandú</span>:<ul>
+						<li>2008 - Province-wide contest participation, second level
+						<li>2009 - National contest participation, third level
+					</ul>
+					<li>Argentine Mathematical Olympiad <span lang="es" class="translation">Olimpíada Matemática Argentina)</span>:<ul>
+						<li class="hidden_1">2014 - National contest approval, third level
+						<li class="hidden_1">2013 - National contest approval, second level
+						<li>2013 - First runner-up on province-wide contest, third level
+						<li>2012 - First runner-up on province-wide contest, second level
+					</ul>
+					<li>Argentine Chemistry Olympiad <span lang="es" class="translation">Olimpiada Argentina de Química)</span>:<ul>
+						<li>2013 - Honorable mention, national contest
+					</ul>
+				</ul>
+
+			</section>
+
+		</main>
+		<script src="./cv.js"></script>
+	</body>
+</html>
+
